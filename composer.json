@@ -10,9 +10,10 @@
             "email": "admin@yiichina.com"
         }
     ],
+    "minimum-stability": "dev",
     "require": {
         "yiisoft/yii2-bootstrap": "~2.0.0",
-        "bower-asset/select2-bootstrap-theme": "0.1.0-beta.10"
+        "bower-asset/select2-bootstrap-theme": "*"
     },
     "autoload": {
         "psr-4": {
