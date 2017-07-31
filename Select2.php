@@ -7,13 +7,13 @@ use yii\Helpers\Html;
 /**
  * This is just an example.
  */
-class CKEditor extends \yii\widgets\InputWidget
+class Select2 extends \yii\widgets\InputWidget
 {
     public function init()
     {
         parent::init();
         $view = $this->getView();
-        CKEditorAsset::register($view);
+        Select2BootstrapAsset::register($view);
 		$view->registerJs("CKEDITOR.replace(\"{$this->options['id']}\")");
     }
 

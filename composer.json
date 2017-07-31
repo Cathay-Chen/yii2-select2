@@ -13,7 +13,7 @@
     "minimum-stability": "dev",
     "require": {
         "yiisoft/yii2-bootstrap": "~2.0.0",
-        "bower-asset/select2-bootstrap-theme": "dev-master"
+        "bower-asset/select2": "~4.0.1"
     },
     "autoload": {
         "psr-4": {
