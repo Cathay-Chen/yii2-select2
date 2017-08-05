@@ -1,6 +1,6 @@
 <?php
 
-namespace yiichina\ckeditor;
+namespace yiichina\select2;
 
 use yii\Helpers\Html;
 
