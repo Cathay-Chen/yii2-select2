@@ -17,13 +17,13 @@ use yii\web\AssetBundle;
  */
 class Select2BootstrapAsset extends AssetBundle
 {
-    public $sourcePath = '@vendor/yiichina/yii2-select2/assets';
+    public $sourcePath = '@bower/select2-bootstrap-theme/dist';
 
     public $css = [
         'select2-bootstrap.min.css',
     ];
 
     public $depends = array(
-        'Select2Asset'
+        'yii\bootstrap\BootstrapAsset'
     );
 }
