@@ -13,7 +13,7 @@ class Select2 extends \yii\widgets\InputWidget
     public $bootstrapTheme = false;
     public $selection = null;
     public $items = [];
-    public $select2Options = [];
+    public $clientOptions = [];
     public $multiple = false;
 
     public function init()
@@ -23,13 +23,13 @@ class Select2 extends \yii\widgets\InputWidget
         Select2Asset::register($view);
         if($this->bootstrapTheme == true) {
             Select2BootstrapAsset::register($view);
-            $this->select2Options = array_merge($this->select2Options, ['theme' => 'bootstrap']);
+            $this->clientOptions = array_merge($this->clientOptions, ['theme' => 'bootstrap']);
         }
-        $select2Options = Json::encode($this->select2Options);
+        $clientOptions = Json::encode($this->clientOptions);
         if($this->multiple == true) {
             $this->options = array_merge($this->options, ['multiple' => 'multiple']);
         }
-		$view->registerJs("$('#{$this->options['id']}').select2($select2Options)");
+		$view->registerJs("$('#{$this->options['id']}').select2($clientOptions)");
     }
 
     public function run()
